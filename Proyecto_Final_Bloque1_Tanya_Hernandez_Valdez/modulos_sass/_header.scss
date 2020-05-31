@@ -1,0 +1,41 @@
+.s-header{
+    flex-direction: column;
+    
+    h1{
+        margin-top: 40px;
+        margin-left: 200px;
+        font-family: IBMPlexSans;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+
+    p{
+        width: 628px;
+        height: 48px;
+        margin-top: 10px;
+        margin-left: 200px;
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px; 
+    
+    }
+
+    .boton{
+        width: 226px;
+        height: 56px;
+        margin-top: 10px;
+        margin-left: 200px;
+        font-family: IBMPlexMono-Medium;
+        font-size: 18px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        padding: 0.5em;
+        text-align: center;
+        background: #00F3BB;
+        border-style: none;
+    }    
+}
