@@ -38,7 +38,7 @@
             ul{
                 width: 100%;
                 flex-direction: column;
-                background-color: #f2f2f2;
+                background-color: #fdf2e9;
 
                 li{
                     margin: 0;
@@ -86,6 +86,7 @@
             width: 288px;
             height: 48px;
             padding: 0.5em;
+            font-size: 16px;
             line-height: 14px;
         }    
     }
@@ -104,7 +105,7 @@
                 0 100%,
                 0 0,
                 100% 0,
-                0 calc(100% - 2vw));
+                0 calc(100% - 0vw));
             }
 
             .header2__bg {
@@ -115,7 +116,7 @@
                 clip-path: polygon(
                 0 100%,
                 100% 100%,
-                100% 20%,
+                100% 50%,
                 0 calc(100% + 0vw));
             }
 
@@ -206,6 +207,17 @@
                 width: 288px;
                 height: 254px;
                 margin: 0;
+
+                h2{
+                    font-size: 24px;
+                    margin: 0;
+                }
+    
+                p{
+                    font-family: 'Buda', cursive;
+                    font-size: 16px;
+                    margin: 0;
+                }
             }
     }
 
@@ -232,7 +244,6 @@
                              "foto4 foto4 foto4"
                              "foto5 foto5 foto5"
                              "foto6 foto6 foto6";
-
         .foto1{        
             width: 330px;
             height: 243px;           
@@ -283,7 +294,7 @@
     .contenido .seccion4{
         width: 320px;
         height: 700px;
-        margin: 0;
+        margin: initial;
         display: flex;
         align-content: center;
         flex-direction: column;
@@ -302,13 +313,14 @@
 
             p{
                 text-align: center;
+                font-size: 18px;
             }
         }
 
         .topico2{
             width: 90%;
             height: 104px;
-            margin: 1.5em;
+            margin: 2em;
 
             img{
                 width: 100%;
@@ -317,13 +329,14 @@
 
             p{
                 text-align: center;
+                font-size: 18px;
             }        
         }
 
         .topico3{
             width: 90%;
             height: 104px;
-            margin: 1.5em;
+            margin: 1.9em;
         
             img{
                 width: 100%;
@@ -332,6 +345,7 @@
              
             p{
                 text-align: center;
+                font-size: 18px;
             }              
         }
 
@@ -347,6 +361,7 @@
              
             p{
                 text-align: center;
+                font-size: 18px;
             }   
         }
     }
@@ -364,7 +379,7 @@
 
         h1{
             margin: 1em;
-            font: 26px "Arial";
+            font-size: 36px;
         }
 
         button{
@@ -382,6 +397,7 @@
         p{
             margin-right: 22px;
             margin-left: 22px;
+            padding: 5px;
             text-align: center;
             font-size: 14px;
             float: unset;
@@ -395,12 +411,15 @@
     
             li{
                 margin-right: 10px;
-                margin-left: 30px;
-            }
-            
+                margin-left: 20px;
+            }            
         }
-    }
-    
+    }    
 }
+
+
+
+
+
 
 

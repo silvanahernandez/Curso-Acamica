@@ -24,15 +24,17 @@
             100% 100%,
             100% 0,
             100% 0,
-            -160% calc(100% + 6vw));
+            -170% calc(100% + 5vw));
         }
 
         .secc1-titulo1 {
             .titulo{
 
                 h2{
+                    font-family: 'Cormorant SC', serif;
                     margin-left: 200px;
                     font-size: 48px;
+                    color: white;
                 }
             }
         }
@@ -132,7 +134,19 @@
             align-items: center;
             width: 464px;
             height: 204px;
-            margin: 2em;
+            margin: 1em;
+
+            h2{
+                font-family: 'Cormorant SC', serif;
+                font-size: 32px;
+                margin: 0.3em;
+            }
+
+            p{
+                font-family: 'Buda', cursive;
+                font-size: 20px;
+                margin: 0.5em;
+            }
         }
     }
 
@@ -143,8 +157,8 @@
             margin-left: 200px;
 
             h2{
-                font-family: IBMPlexSans;
-                font-size: 38px;
+                font-family: 'Cormorant SC', serif;
+                font-size: 48px;
                 color: #060A24;
                 letter-spacing: 0;  
 
@@ -250,8 +264,8 @@
             margin-top: 70px;
 
             h2{
-                font-family: IBMPlexSans;
-                font-size: 38px;
+                font-family: 'Cormorant SC', serif;
+                font-size: 48px;
                 color: #060A24;
                 letter-spacing: 0;  
 
@@ -259,7 +273,6 @@
         }
 
     }
-
 
     .seccion4{
         height: 200px;
@@ -284,6 +297,13 @@
                 width: 50%;
                 height: 40%;
             }
+
+            p{
+                text-align: center;
+                font-family: 'Buda', cursive;
+                font-weight: bold;
+                font-size: 24px;
+            }
         }
 
         .topico2{
@@ -300,7 +320,13 @@
                 width: 50%;
                 height: 35%;
             }
-            
+
+            p{
+                text-align: center;
+                font-family: 'Buda', cursive;
+                font-weight: bold;
+                font-size: 24px;
+            }            
         }
 
         .topico3{
@@ -317,7 +343,13 @@
                 width: 50%;
                 height: 35%;
             }
-            
+
+            p{
+                text-align: center;
+                font-family: 'Buda', cursive;
+                font-weight: bold;
+                font-size: 24px;
+            }            
         }
 
         .topico4{
@@ -333,6 +365,13 @@
                 margin: 1em;
                 width: 50%;
                 height: 35%;
+            }
+
+            p{
+                text-align: center;
+                font-family: 'Buda', cursive;
+                font-weight: bold;
+                font-size: 24px;
             }
         }
     }
@@ -355,7 +394,8 @@
         h1{
             z-index: 1;
             margin: 1em;
-            font: 44px "Arial";
+            font-family: 'Cormorant SC', serif;
+            font-size: 48px;
             color: white;
             text-align: center;
         }
@@ -365,7 +405,9 @@
             width: 345px;
             height: 56px;
             background: #00F3BB;
-            font-size: 18px;
+            font-family: 'Buda', cursive;
+            font-size: 20px;
+            font-weight: bold;
             color: #060A24;
             letter-spacing: 0;
             text-align: center;
