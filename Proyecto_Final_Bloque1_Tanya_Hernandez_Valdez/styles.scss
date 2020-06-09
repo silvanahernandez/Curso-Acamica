@@ -3,11 +3,12 @@
 @import "modulos_sass/contenido";
 @import "modulos_sass/footer";
 @import "modulos_sass/mobile";
-//@import "modulos_sass/mobile-tablets";
+@import "modulos_sass/mobile-tablets";
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .contenedor-principal{
@@ -29,7 +30,7 @@
 }
 
 .contenedor-principal .s-header{
-    height: 230px;
+    height: 250px;
     grid-area: header;
 }
 
@@ -42,6 +43,7 @@
     height: 80px;
     grid-area: footer;
 }
+
 
 
 

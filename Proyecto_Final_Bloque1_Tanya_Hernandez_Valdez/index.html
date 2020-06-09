@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/4520975f6e.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Cormorant+SC:wght@700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">  
     <title>Podcast</title>
 </head>
 <body>
@@ -13,32 +16,28 @@
     
         <header class="p-header">
 
-            <label for="toggle">&#9776;</label>
+            <img src="imagenes/logo.svg" alt="Logo">
+            <label for="toggle" class="menu-visible"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="toggle"/>
-
-            <div class="logo">
-                <img src="imagenes/logo.jpg" alt="Logo">
-            </div>
-
-            <nav class="menu">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#episodios">Episodios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#topicos">Tópicos</a></li>
+        
+                 <ul class="menu">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
                 </ul>
-
-            </nav>
             
         </header>
 
         <header class="s-header">
-            <a name="inicio"></a>
-            <h1>Curiosidades del mundo</h1>
+            <a id="inicio"></a>
+            <h1 class="primero">Hello</h1>
+            <h1 class="segundo">world</h1> 
+            <h1 class="tercero">pale blue dot.</h1>
 
-            <p>El portal de podcast que averigua las curiosidades de la historia del mundo. Cada semana subimos contenido nuevo.</p>
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
 
-            <button class="boton">Conocé más</button>
+            <form><a href="#conoce"></a><button class="boton">CONOCÉ MÁS</button></form>
         </header>
 
         <main class="contenido">
@@ -48,28 +47,32 @@
                 
                 <section class="secc1-titulo1">
                     <div class="titulo">
-                        <a name="episodios"></a>
-                        <h2>Episodios</h2>
+                        
+                        <h2><a id="episodios"></a><a id="escucha"></a>Episodios</h2>
                     </div>   
                 </section>
                 
                 <section class="seccion1">
+                    <h5>.</h5>
 
                     <div class="podcast1">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/6gpmVxozWm8E3WL9kRoEtT" frameborder="0" allowtransparency="true" allow="encrypted-media">
+                        <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" allow="encrypted-media">
                         </iframe>
                     </div>
 
                     <div class="podcast2">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/4Zd6H5SAqUDE9Wk7SChDd3" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media">
+                        </iframe>
                     </div>
 
                     <div class="podcast3">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/5fS55mUYiCdVDEw6h2eL0t" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media">
+                        </iframe>
                     </div>
 
                     <div class="podcast4">
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/3mhOBMLfWzwM6coTLd79rB" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media">
+                        </iframe>
                     </div>
                     
                 </section>
@@ -78,92 +81,94 @@
             </div>
 
             <section class="seccion2">
+                <h5>.</h5>
                 
                 <div class="imagen">
-                    <img src="/imagenes/seccion2_img.jpg" alt="Chichén Itzá">
+                    <img src="/imagenes/phone.png" alt="Celular">
                 </div>
                 
                 <div class="texto">
-                    <a name="nosotros"></a>
-                    <h2>Curiosidades del mundo y anecdotas de la epóca antigua</h2>
-                    <p>Desde el principio de la tierra hasta el día de hoy existen misterios y curiosidades que la humanidad no ha podido encontrar explicación. <br> Por está razón dedicamos este canal para subir contenido acerca de estos eventos ocurridos en la epóca antigua.</p>
+                    <h2> <a id="nosotros"></a>De dónde venimos</h2>
+                    <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br><br>
+                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
                 </div>
 
             </section>
 
             <section class="secc3-titulo3">
                 <div class="titulo-3">
-                    <h2>Fotografías de curiosidades de la historia</h2>
+                    <h2> <a id="entrevistas"></a>Invitadas/os estelares</h2>
                 </div> 
             </section>
 
             <section class="seccion3">
+                <h5>.</h5>
                 
                 <div class="foto1">
-                    <img src="imagenes/seccion3_foto1.jpg" alt="Popocatépetl e Iztaccíhuatl">
+                    <img src="imagenes/grace-hopper.png" alt="Grace Hopper">
                 </div>
                 <div class="foto2">
-                    <img src="imagenes/seccion3_foto2.jpg" alt="Teotihuacán">
+                    <img src="imagenes/Katie-Bouman.png" alt="Katie Bouman">
                 </div>
                 <div class="foto3">
-                    <img src="imagenes/seccion3_foto3.jpg" alt="Cuevas de los Cristales México">
+                    <img src="imagenes/Margaret_Hamilton.png" alt="Margaret Hamilton">
                 </div>
                 <div class="foto4">
-                    <img src="imagenes/seccion3_foto4.jpg" alt="Castillo de Olite">
+                    <img src="imagenes/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="Computadora en los años de 1950">
                 </div>
                 <div class="foto5">
-                    <img src="imagenes/seccion3_foto5.jpg" alt="Valle de la muerte California">
+                    <img src="imagenes/Computer_operators_with_an_Eniac.png" alt="Computadora operando con un Eniac">
                 </div>
                 <div class="foto6">
-                    <img src="imagenes/seccion3_foto6.jpg" alt="Socotra la Isla encantada de Yemen">
+                    <img src="imagenes/susan-kare.png" alt="Susan Kare">
                 </div>
             </section>
 
             <section class="secc4-titulo4">
                 <div class="titulo-4">
-                    <h2>Algunos de nuestros temas</h2>
+                    <h2><a id="topicos"></a><a id="conoce"></a>Algunos de nuestros temas</h2>
                 </div> 
             </section>
 
             <section class="seccion4">
-                <a name="topicos"></a>
+                <h5>.</h5>
                 <div class="topico1">
-                  <img src="iconos/svg/001-roma.svg" alt="Roma">
-                  <p>La vida nocturna en la antigua Roma</p>
+                  <img src="iconos/icon1.svg" alt="Trabajo remoto">
+                  <p>Trabajo remoto</p>
                 </div>
 
                 <div class="topico2">
-                    <img src="iconos/svg/002-secreto.svg" alt="Secreto">
-                    <p>Espías y códigos secretos de la antigüedad</p>
+                    <img src="iconos/icon2.svg" alt="Repensando en la programación">
+                    <p>Repensando en la programación</p>
                 </div>
 
                 <div class="topico3">
-                    <img src="iconos/svg/003-castigo.svg" alt="Castigo Edad Media">
-                    <p>Los castigos en la Edad Media</p>
+                    <img src="iconos/icon3.svg" alt="Bases del código">
+                    <p>Bases del código</p>
                 </div>
 
                 <div class="topico4">
-                    <img src="iconos/svg/004-jesus.svg" alt="Jesús">
-                    <p>Los secretos de la vida de Jesús</p>
+                    <img src="iconos/icon4.svg" alt="Seguridad informática">
+                    <p>Seguridad informática</p>
                 </div>
 
             </section>
 
             <section class="seccion5">
-                <h1>¿Quieres las últimas novedades?</h1>
-                <button>Escuchá los episodios</button>
+                <h2>¿Querés las últimas novedades?</h2>
+                <form><a href="#escucha"></a><button>ESCUCHÁ LOS EPISODIOS</button></form>
             </section>
 
         </main>
 
         <footer class="footer">        
                 <ul>
-                    <p>© 2020- Curiosidades del mundo</p>
-                    <li><a target="_blank" href="https://www.spotify.com/mx/"></a><i class="fab fa-spotify"></i></li>
-                    <li><a target="_blank" href="https://www.instagram.com/"></a><i class="fab fa-instagram"></i></li>
-                    <li><a target="_blank" href="https://twitter.com/"></a><i class="fab fa-twitter"></i></li>
-                    <li><a target="_blank" href="https://www.facebook.com/"></a><i class="fab fa-facebook"></i></li>
-                    <li><a target="_blank" href="https://web.telegram.org/"></a><i class="fab fa-telegram"></i></li>
+                    <li class="texto-f">© 2019— Hello blue pale dot</li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.spotify.com/mx/"></a><i class="fab fa-spotify"></i></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/"></a><i class="fab fa-instagram"></i></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/"></a><i class="fab fa-twitter"></i></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"></a><i class="fab fa-facebook"></i></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://web.telegram.org/"></a><i class="fab fa-telegram"></i></li>
                 </ul>
             
         </footer>
