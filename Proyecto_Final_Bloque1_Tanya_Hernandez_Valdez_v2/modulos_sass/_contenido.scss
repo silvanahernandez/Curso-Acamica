@@ -1,0 +1,330 @@
+@mixin figura{
+    position: relative;
+    height: 120px;
+    background-image: linear-gradient(225deg, white 0%, white 100%);
+}
+
+@mixin h2($color){
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: $color;
+}
+
+@mixin podcast($name) {
+    grid-area: $name;
+    width: 584px;
+    height: 232px;
+    margin: 2em;
+    margin-left: 70px;    
+}
+
+@mixin iframe {
+    width: 100%;
+    height: 200%;
+    border: 1px transparent solid;
+    background-color: transparent;
+}
+
+@mixin foto($foto-name) {
+    grid-area: $foto-name;
+    width: 480px;
+    height: 364px; 
+}
+
+@mixin fot-img($size, $repeat) {
+    width: 100%;
+    height: 100%;
+    background-size: $size;
+    background-repeat: $repeat;    
+}
+
+@mixin topico($name-topico, $margin) {
+    grid-area: $name-topico;
+    margin: $margin;
+    width: 260px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+@mixin texto-topic {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+@mixin boton {
+    z-index: 1;
+    width: 345px;
+    height: 56px;
+    background: #00F3BB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+}
+
+.contenido{
+    position: relative;
+    overflow: hidden;
+
+    .contenido-seccion1{
+        background-image: linear-gradient(#0000FF, #0000A3);
+
+        .header__bg {
+            @include figura;
+            clip-path: polygon(
+              100% 0,
+              0 100%,
+              0 100%,
+              0 calc(100% - 20vw));
+        }
+
+        .header2__bg {
+            @include figura;
+            clip-path: polygon(
+            100% 100%,
+            100% 0,
+            100% 0,
+            -170% calc(100% + 5vw));
+        }
+
+        .secc1-titulo1 {
+
+            .titulo{
+
+                h2{
+                    @include h2(#FFFFFF);   
+                    margin-left: 200px;
+                    margin-top: 40px;
+                }
+            }
+        }
+        
+        .seccion1{
+            height: 600px;
+            margin: 1em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: "podcast1 podcast2"
+                                "podcast3 podcast4";
+            align-content: center;
+            justify-items: center;
+
+            h5{display: none;}
+
+            .podcast1{@include podcast(podcast1);
+                iframe{@include iframe;}
+            }
+
+            .podcast2{@include podcast(podcast2);
+                iframe{@include iframe;}
+            }
+
+            .podcast3{@include podcast(podcast3);
+                iframe{@include iframe;}
+            }
+
+            .podcast4{@include podcast(podcast4);
+                iframe{@include iframe;}
+            }
+        }
+    }
+    
+    .seccion2{
+        height: 600px;
+        margin: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "imagen texto"; 
+
+        h5{display: none;}
+       
+        .imagen{
+            grid-area: imagen;
+            width: 400px;
+            height: 660px;
+            margin-left: 200px;
+            margin-top: -150px;
+            z-index: 2;  
+               
+            img{
+                width: 100%;
+                height: 100%; 
+                border-radius: 1em;              
+            }            
+        }
+
+        .texto{
+            grid-area: texto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 464px;
+            height: 204px;
+            margin-top: 100px;
+
+            h2{
+                @include h2(none);
+                margin-left: -55px;
+            }
+
+            p{
+                font-family: 'IBM Plex Mono';
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .secc3-titulo3 {    
+
+        .titulo-3 {
+            height: 62px; 
+            margin-left: 200px;
+
+            h2{
+                @include h2(#060A24);
+                letter-spacing: 0;  
+            }
+        }
+    }
+
+    .seccion3{
+        height: 730px;
+        margin: 1em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+                             "foto1 foto2 foto3"
+                             "foto4 foto5 foto6"; 
+        h5{display: none;}
+
+        .foto1{@include foto(foto1);
+            img{ @include fot-img(cover, no-repeat);}           
+        }
+
+        .foto2{@include foto(foto2);     
+            img{@include fot-img(cover, no-repeat);}
+        }
+
+        .foto3{@include foto(foto3);
+            img{@include fot-img(cover, no-repeat);}
+        }
+
+        .foto4{@include foto(foto4);
+            img{@include fot-img(cover, no-repeat);}
+        }
+
+        .foto5{@include foto(foto5);   
+            img{@include fot-img(cover, no-repeat);}
+        }
+
+        .foto6{@include foto(foto6);
+            img{@include fot-img(cover, no-repeat);}
+        }
+    }
+
+    .secc4-titulo4 {
+        
+        .titulo-4 {
+            height: 62px; 
+            margin-left: 200px;
+            margin-top: 70px;
+
+            h2{
+                @include h2(#060A24);
+                letter-spacing: 0;  
+            }
+        }
+    }
+
+    .seccion4{
+        height: 300px;
+        margin: 1em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas: "topico1 topico2 topico3 topico4";
+        align-items: center;
+        justify-content: center;
+
+        h5{display: none;}
+        
+        .topico1{
+            @include topico(topico1, 2em);
+            margin-left: 190px;
+
+            img{@include fot-img(none, none);}
+
+            h2{@include texto-topic;}
+        }
+
+        .topico2{
+            @include topico(topico2, 1em);
+    
+            img{@include fot-img(none, none);}
+
+            p{@include texto-topic;}            
+        }
+
+        .topico3{
+            @include topico(topico3, 1em);
+        
+            img{@include fot-img(none, none);}
+
+            p{@include texto-topic;}            
+        }
+
+        .topico4{
+            @include topico(topico4, 1em);
+            margin-right: 190px;
+        
+            img{@include fot-img(none, none);}
+
+            p{@include texto-topic;}
+        }
+    }
+
+    .seccion5{
+        position: relative;
+        height: 518px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        clip-path: polygon(
+        100% 100%,
+        100% 50%,
+        100% 0,
+        -200% calc(100% + 0vw));
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            @include h2(#FFFFFF);
+            z-index: 1;
+            margin: 1em;
+            text-align: center;
+        }
+
+        button{
+            @include boton;
+
+            &:hover{
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                color: #FFFFFF;
+            }
+        }
+    }
+}

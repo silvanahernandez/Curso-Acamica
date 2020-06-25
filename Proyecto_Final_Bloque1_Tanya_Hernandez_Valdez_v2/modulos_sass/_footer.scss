@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+    line-height: 80px;
+
+    .texto-f{
+        width: 269px;
+        height: 28px;
+        margin-right: 650px;
+        margin-left: 100px;
+        font-family: 'IBM Plex Mono';
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        float: left;
+    }
+
+    ul{
+        display: flex;
+        justify-content: flex-end;   
+        list-style: none;
+        margin-right: 90px;
+        
+        li{
+            margin-right: 2.5%;
+            display: inline-block;
+           
+            a{
+                padding: 5px;
+                text-decoration: none;
+            }
+        }        
+    }
+}
