@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challengue Bitacora 26</title>
+</head>
+<style>
+    input:valid{
+        background: white;
+    }
+    
+</style>
+
+<body>
+    Ingresa tu nombre: <input id="nombre" type="text" valid> <br>
+    <button onclick="enviar()">Enviar</button>
+
+    <script>
+    
+        function enviar(){
+            var nombre = document.getElementById("nombre").value;
+           
+            if(nombre.length == 0){
+                alert("El campo está vacío");
+                document.getElementById("nombre").style.background = "red";
+                //return false;    
+            }else{
+                alert("Hola" + " " + nombre);
+                nombre.style.background = "white";
+                //return true;
+            }           
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+
+fieldset{
+    border: 1px solid black;
+}
+
+form{
+    text-align: left;
+    font-size: large;
+    margin: 3em;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+#apellidos{
+    margin-left: 12px;
+}
+
+.boton{
+    text-align: center;
+    width: 70px;
+    height: 30px;
+}

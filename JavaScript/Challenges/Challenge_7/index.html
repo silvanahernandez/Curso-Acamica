@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Condicional</title>
+</head>
+<body>
+        <script>
+            
+            var n;
+            var i = 0;
+            var num;
+            var promedio;
+
+            n = prompt("Ingrese la cantidad de números que desea iterar:");  
+
+            do{
+                i++;
+                num = prompt("Ingrese los valores:");
+                promedio = num / n;
+                promedio = parseFloat(promedio);
+                n = parseInt(n);
+                num = parseInt(num);                
+            }
+            
+            while(i < n){
+                alert("El promedio de los numeros es:" + " " + promedio);
+            }
+            
+        </script>
+</body>
+</html>
