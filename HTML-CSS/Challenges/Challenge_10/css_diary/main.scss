@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 2px; /*Para separar entre cada sección*/
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    color: purple;
+    text-align: center;
+    height: 100vh; /*Probar con otras unidades de medición para evaluar las diferencias*/
+    display: flex;
+    flex-direction: column;
+}
+
+@import "sass_diary/_header.scss";
+@import "sass_diary/_bmain.scss";
+@import "sass_diary/_footer.scss";
+@import "sass_diary/_mobiles.scss";
+
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');

@@ -1,0 +1,55 @@
+@media all and (max-width:768px) {
+    .f_header {
+        font-size: larger;
+
+        label{
+            display: block;
+            cursor: pointer;
+        }
+
+        .menu{
+            margin: none;
+            width: 100%;
+            display: none;
+
+            li{
+                width: 110%;
+                border: lightpink 1px solid;
+                display: block;
+
+                a{
+                    margin: 0;
+    
+                    &:hover{
+                        background: none;
+                        color: #7D3C98;
+                        transition: 0.2s;
+
+                    }
+                }
+            }   
+        }
+
+        #toggle:checked + .menu{
+            display: block;
+        }
+    }
+    
+    .f_main {
+        flex-direction: column;
+
+        .f_article {
+            .title_article {
+                font-size: large;
+            }
+
+            .not1, .not2, .not3, .not4 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+    }
+
+    
+}

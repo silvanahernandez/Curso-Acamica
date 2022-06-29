@@ -1,0 +1,13 @@
+nav{
+    background-color: lightcyan;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-flex;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 500px) {
+    nav{
+      background-color: lightcoral;
+    }
+  }

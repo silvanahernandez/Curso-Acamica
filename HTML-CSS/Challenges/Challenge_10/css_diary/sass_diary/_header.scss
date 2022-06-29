@@ -1,0 +1,84 @@
+.f_header {
+    background-color: rgb(227, 243, 248);
+    border-radius: 0.3em;
+
+
+    h1 {
+        font-family: "Iceland", cursive;
+        text-align: center;
+        font-size: xxx-large;
+        
+    }
+}
+
+/*Inicio del desarrollo para buscador*/
+.searcher {
+    float: left;
+    margin-left: 10px;
+    input.src {
+        padding: 9px 10px 9px 32px;
+        font-size: 18px;
+        font-family: "Quicksand", sans-serif;
+        border-radius: 15px;
+        outline: none;
+        color: purple;
+        border: 3px solid lightgrey;
+        width: 60px;
+        transition: all 0.5s;
+        background: #fff url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px center; //Revisar
+
+        &:hover {
+            width: 180px;
+            border-color: purple;
+        }
+    }
+}
+/*Finaliza el desarrollo para buscador*/
+
+.nav {
+    border-bottom: 1px solid #eaeaeb;
+    height: 70px;
+    line-height: 70px;
+    grid-area: nav; //
+
+    .menu {
+        float: right;
+        list-style: none;
+        margin: 0 30px 0 0;
+        
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            line-height: 70px;
+
+            a {
+                padding: 10px;
+                font-family: "Iceland", cursive;
+                font-size: 20px;
+                text-decoration: none;
+                color: black;
+                clear: right;
+                /* transform: uppercase;*/
+
+                &:hover {
+                    background-color: #d6eaf8;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+label {
+    margin: 0 40px 0 0;
+    width: 26px;
+    float: right;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
