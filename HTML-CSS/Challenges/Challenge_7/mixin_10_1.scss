@@ -1,0 +1,21 @@
+@mixin contenedores($tam-flex) {
+    padding: 20px;
+    margin: 0.5em;
+    background-color: $beige;
+    flex: $tam-flex;
+}
+
+@mixin imagen1 {
+    display: flex;
+    justify-content: center;
+    background-color: $blanco;
+    width: 96%;        
+    height: auto;
+    padding: 20px;
+}
+
+@mixin fonts($tam-padding, $font-style) {
+    padding: $tam-padding;
+    font-family: $font-titulos;
+    font-style: $font-style;
+}

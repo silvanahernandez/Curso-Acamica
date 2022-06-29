@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav ul{
+    width: 2300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+li{
+    display: inline;
+    color: #ffffff;
+    list-style: none;
+    padding: 1em;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+header{
+    height: 50px;
+}
+
+.texto{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+main{
+    height: 350em;
+}
+
+.seccion1{
+    height: 800px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}
+
+.seccion1 h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.seccion1 h2{
+    padding: 1em;
+}
+
+.seccion1 h3{
+    font-size: 40px;
+}
+
+.seccion1 h4{
+    display: inline-block;
+    padding: 1em;
+}
+
+.seccion1 img{
+    height: 250px;
+}
+
+.seccion2{
+    height: 845px;
+    text-align: center;
+    line-height: normal;
+    background-color: #f8f9f9;
+}
+
+.seccion2 h1{
+    font-size: 80px;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.seccion2 h2{
+    padding: 1em;
+}
+
+.seccion2 h4{
+    display: inline-block;
+    padding: 1em;
+}
+
+.seccion3{
+    height: 1050px;
+    text-align: center;
+}
+
+.seccion3 h1{
+    font-size: 80px;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.seccion3 h2{
+    padding: 1em;
+}
+
+.seccion3 h4{
+    display: inline-block;
+    padding: 1em;
+}
+
+.seccion3 img{
+    height: 700px;
+    margin-top: -2em;
+}
+
+.seccion4{
+    height: 500px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+}
+
+.seccion4 .caja1{
+    height: 55em;
+}
+
+.caja1 h1, h2{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.caja1 h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.caja1 h2{
+    font-size: 1.5em;
+}
+
+.seccion4 .caja2{
+    background-color: black;
+}
+
+.caja2 h1, h2{
+    margin-top: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.caja2 h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.caja2 h2{
+    font-size: 2em;
+}
+
+.caja2 img{
+    width: 60em;
+    height: 30em;
+}
+
+.seccion4 .caja3{
+    height: 55em;
+    background-color: black;
+}
+
+.caja3 h1, h2{
+    margin-top: 1em;
+    text-align: center;
+    color: white;
+}
+
+.caja3 h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.caja3 h2{
+    font-size: 2em;
+}
+
+.caja3 h4{
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.caja3 img{
+    width: 60em;
+    height: 30em;
+}
+
+.caja4 h1{
+    text-align: center;
+    color: black;
+    margin-top: 1em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.caja4 .texto4{
+    color: red;
+    font-size: 1.5em;
+}
+
+.caja4 .texto4-1{
+    color: black;
+}
+
+.caja4 h2{
+    font-size: 2em;
+}
+
+.caja4 h4{
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.caja4 img{
+    width: 50em;
+    height: 30em;
+}
+
+.seccion4 .caja5{
+    height: 55em;
+    background-image: url(imagenes/TV_apple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+
+}
+
+.caja5 h2{
+    font-size: 1.5em;
+    color: black;
+    margin-top: 0.5em;
+    text-align: inherit;
+}
+
+
+.seccion4 .caja6{
+    background-image: url(imagenes/arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.caja6 h1{
+    margin-top: 1em;
+    font-size: 3em;
+    font-weight: bold;
+    color:  #0cf613;
+}
+
+.caja6 h2{
+    font-size: 2em;
+    color: #0cf613;
+}
+
+.caja6 h4{
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.caja6 h4 a{
+    color: #0cf613;
+}
+
+.footer{
+    width: 80%;
+    height: 48em;
+}
+
+.footer .parte1{
+    margin-left: 30em;
+    margin-right: 5em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.footer .parte2{
+    margin-left: 30em;
+    margin-right: 5em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.parte2 .col1 .text1{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.parte2 .col2 .text2{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.parte2 .col2 .text3{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.parte2 .col3 .text4{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.parte2 .col4 .text5, .text6{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.parte2 .col5 .text7, .text8{
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.footer .parte3{
+    margin-left: 30em;
+    margin-right: 5em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.footer .parte4{
+    margin-left: 30em;
+    margin-right: 5em;
+    margin-top: 1em;
+}

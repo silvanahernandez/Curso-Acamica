@@ -1,0 +1,334 @@
+@import "variables_10_1";
+@import "mixin_10_1";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $beige;
+}
+
+.contenedor-principal{
+
+    header{
+        width: 100%;
+
+        nav{
+            width: 100%;
+            max-width: 2000px;
+            margin: 20px auto;
+            background: $menu;
+        
+            ul{
+                overflow: hidden;
+                list-style: none;
+            
+                li{
+                    float: right;
+                
+                    a{
+                        color: $a;
+                        padding: 20px;
+                        display: block;
+                        text-decoration: none;
+
+                        &:hover{
+                            background: $fondo-menu;
+                        }
+
+                        span{
+                            margin-right: 10px;
+                        }                    
+                    }    
+                }
+            }
+        }
+    }
+
+    .menu{
+        display: none;
+    }    
+ 
+    .contenedor{
+        display: flex;
+        align-items: stretch;
+        height: 1750px;
+
+        nav{
+            @include contenedores(20%);
+        }
+
+        article{
+            @include contenedores(60%);
+        }
+    
+        aside{
+            @include contenedores(20%);
+        }
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 130px;
+        margin: 0.5em;
+        background-color: $beige;
+    
+        .iconos{
+            display: flex;
+            justify-content: center;
+        
+        }
+    }
+}
+
+.article {
+
+    img{
+        width: 500px;
+        height: 150px;
+    }
+
+    .img1{
+        @include imagen1;   
+    }   
+}
+
+.nav2{
+
+    img{
+        width: 220px;
+        height: 150px;
+    }
+    
+    .img1{
+        @include imagen1; 
+    }
+
+    .img2{
+        @include imagen1; 
+    }
+}
+
+h1{
+    padding: 0.2em;
+    font-family: $titulos;
+    font-size: 40px;
+    color: $menu;
+}
+h2{
+    @include fonts(0.3em, none);
+}
+
+h3{
+    @include fonts(0.3em, none);
+}
+
+h5{
+    @include fonts(0.4em, italic);
+}
+
+p{
+    padding: 0.3em;
+    font-family: $texto;
+    font-size: 17px;
+    text-align: justify;
+}
+@media screen and (max-width: 320px){
+
+    .contenedor-principal{
+        flex-direction: column;
+
+        header{
+            nav{
+                width: 50%;
+                height: 100%;
+                left: -100%;
+                margin: 0;
+                position: fixed;
+            }
+        }
+            
+        header{
+            nav{
+                ul{
+                    li{
+                        display: block;
+                        float: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    }
+                }
+            }
+        }
+        
+        .menu{
+            display: block;
+            width: 100%;
+            background: $border;
+        }
+
+        .menu{
+            .btn-menu{
+                display: block;
+                padding: 20px;
+                background: $menu;
+                color: $a;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 25px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+        } 
+
+        .menu{
+            span{
+                float: right;
+                font-size: 40px;
+            }
+        } 
+
+        .contenedor{
+            flex-direction: column;
+
+            .article{
+                padding: 5px;
+                flex: 100%;
+
+                .img1{ 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    width: 175px;
+                    padding: 5px;
+                }
+            }
+        
+            img{
+                width: 170px;
+                height: 150px;
+            }
+
+            .aside{
+                padding: 5px;
+                flex: 100%;
+
+                iframe{
+                    width: 100%;
+                }
+            
+            }    
+        }
+
+        .footer{
+            flex-direction: column;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .contenedor-principal{
+        flex-direction: column;
+
+        header{
+            nav{
+                width: 50%;
+                height: 100%;
+                left: -100%;
+                margin: 0;
+                position: fixed;
+            }
+        }
+            
+        header{
+            nav{
+                ul{
+                    li{
+                        display: block;
+                        float: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                    }
+                }
+            }
+        }
+        
+        .menu{
+            display: block;
+            width: 100%;
+            background: $border;
+        }
+
+        .menu{
+            .btn-menu{
+                display: block;
+                padding: 20px;
+                background: $menu;
+                color: $a;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 25px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+        } 
+
+        .menu{
+            span{
+                float: right;
+                font-size: 40px;
+            }
+        } 
+
+        .contenedor{
+            flex-direction: column;
+
+            .article{
+                padding: 5px;
+                flex: 100%;
+
+                .img1{ 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    width: 175px;
+                    padding: 5px;
+                }
+            }
+        
+            img{
+                width: 170px;
+                height: 150px;
+            }
+
+            .aside{
+                padding: 5px;
+                flex: 100%;
+
+                iframe{
+                    width: 100%;
+                }
+            
+            }    
+        }
+
+        .footer{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 2px;
+  /*Para separar entre cada sección*/
+  box-sizing: border-box; }
+
+body {
+  font-size: 24px;
+  color: purple;
+  text-align: center;
+  height: 100vh;
+  /*Probar con otras unidades de medición para evaluar las diferencias*/
+  display: flex;
+  flex-direction: column; }
+
+.f_header {
+  background-color: #e3f3f8;
+  border-radius: 0.3em; }
+  .f_header h1 {
+    font-family: "Iceland", cursive;
+    text-align: center;
+    font-size: xxx-large; }
+
+/*Inicio del desarrollo para buscador*/
+.searcher {
+  float: left;
+  margin-left: 10px; }
+  .searcher input.src {
+    padding: 9px 10px 9px 32px;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 15px;
+    outline: none;
+    color: purple;
+    border: 3px solid lightgrey;
+    width: 60px;
+    transition: all 0.5s;
+    background: #fff url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px center; }
+    .searcher input.src:hover {
+      width: 180px;
+      border-color: purple; }
+
+/*Finaliza el desarrollo para buscador*/
+.nav {
+  border-bottom: 1px solid #eaeaeb;
+  height: 70px;
+  line-height: 70px;
+  grid-area: nav; }
+  .nav .menu {
+    float: right;
+    list-style: none;
+    margin: 0 30px 0 0; }
+    .nav .menu li {
+      display: inline-block;
+      margin: 0 10px;
+      line-height: 70px; }
+      .nav .menu li a {
+        padding: 10px;
+        font-family: "Iceland", cursive;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        clear: right;
+        /* transform: uppercase;*/ }
+        .nav .menu li a:hover {
+          background-color: #d6eaf8;
+          transition: 0.3s; }
+
+label {
+  margin: 0 40px 0 0;
+  width: 26px;
+  float: right;
+  font-size: 26px;
+  line-height: 70px;
+  display: none; }
+
+#toggle {
+  display: none; }
+
+.f_main {
+  display: flex;
+  flex: 1; }
+  .f_main .title {
+    font-size: large;
+    font-weight: bold; }
+  .f_main .f_nav {
+    background-color: lightcyan;
+    padding-top: 3rem;
+    /*Equivalente a 48px*/
+    flex-grow: 1;
+    /*Esto se puede acortar con la función de flex y los valores respectivos, es decir, flex: 1, 1, 5rem; */
+    flex-shrink: 1;
+    flex-basis: 5rem;
+    border-radius: 0.5em; }
+    .f_main .f_nav .title_nav {
+      font-size: large;
+      font-weight: bold; }
+    .f_main .f_nav .ultimas_noticias {
+      padding-left: 20px;
+      font-size: medium;
+      text-align: left;
+      font-family: 'Quicksand', sans-serif; }
+  .f_main .f_article {
+    background-color: #f5e9e4;
+    padding-top: 3rem;
+    /*Equivalente a 48px*/
+    flex-grow: 1;
+    /*Esto se puede acortar con la función de flex y los valores respectivos, es decir, flex: 3, 3; */
+    flex-shrink: 1;
+    border-radius: 0.5em; }
+    .f_main .f_article .title_article {
+      font-size: xx-large;
+      font-weight: bold; }
+    .f_main .f_article .not1, .f_main .f_article .not2, .f_main .f_article .not3, .f_main .f_article .not4 {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px; }
+      .f_main .f_article .not1 .foto1, .f_main .f_article .not1 .foto2, .f_main .f_article .not1 .foto3, .f_main .f_article .not1 .foto4, .f_main .f_article .not2 .foto1, .f_main .f_article .not2 .foto2, .f_main .f_article .not2 .foto3, .f_main .f_article .not2 .foto4, .f_main .f_article .not3 .foto1, .f_main .f_article .not3 .foto2, .f_main .f_article .not3 .foto3, .f_main .f_article .not3 .foto4, .f_main .f_article .not4 .foto1, .f_main .f_article .not4 .foto2, .f_main .f_article .not4 .foto3, .f_main .f_article .not4 .foto4 {
+        border-radius: 1em;
+        max-width: 100%;
+        width: 250px; }
+        .f_main .f_article .not1 .foto1:hover, .f_main .f_article .not1 .foto2:hover, .f_main .f_article .not1 .foto3:hover, .f_main .f_article .not1 .foto4:hover, .f_main .f_article .not2 .foto1:hover, .f_main .f_article .not2 .foto2:hover, .f_main .f_article .not2 .foto3:hover, .f_main .f_article .not2 .foto4:hover, .f_main .f_article .not3 .foto1:hover, .f_main .f_article .not3 .foto2:hover, .f_main .f_article .not3 .foto3:hover, .f_main .f_article .not3 .foto4:hover, .f_main .f_article .not4 .foto1:hover, .f_main .f_article .not4 .foto2:hover, .f_main .f_article .not4 .foto3:hover, .f_main .f_article .not4 .foto4:hover {
+          opacity: 0.7; }
+      .f_main .f_article .not1 .texto1, .f_main .f_article .not1 .texto2, .f_main .f_article .not1 .texto3, .f_main .f_article .not1 .texto4, .f_main .f_article .not2 .texto1, .f_main .f_article .not2 .texto2, .f_main .f_article .not2 .texto3, .f_main .f_article .not2 .texto4, .f_main .f_article .not3 .texto1, .f_main .f_article .not3 .texto2, .f_main .f_article .not3 .texto3, .f_main .f_article .not3 .texto4, .f_main .f_article .not4 .texto1, .f_main .f_article .not4 .texto2, .f_main .f_article .not4 .texto3, .f_main .f_article .not4 .texto4 {
+        margin: 2em;
+        font-size: large;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif; }
+        .f_main .f_article .not1 .texto1:hover, .f_main .f_article .not1 .texto2:hover, .f_main .f_article .not1 .texto3:hover, .f_main .f_article .not1 .texto4:hover, .f_main .f_article .not2 .texto1:hover, .f_main .f_article .not2 .texto2:hover, .f_main .f_article .not2 .texto3:hover, .f_main .f_article .not2 .texto4:hover, .f_main .f_article .not3 .texto1:hover, .f_main .f_article .not3 .texto2:hover, .f_main .f_article .not3 .texto3:hover, .f_main .f_article .not3 .texto4:hover, .f_main .f_article .not4 .texto1:hover, .f_main .f_article .not4 .texto2:hover, .f_main .f_article .not4 .texto3:hover, .f_main .f_article .not4 .texto4:hover {
+          color: #28B463;
+          font-size: 20px; }
+  .f_main .f_aside {
+    background-color: #e5f5f4;
+    padding-top: 3rem;
+    /*Equivalente a 48px*/
+    flex-grow: 1;
+    /*Esto se puede acortar con la función de flex y los valores respectivos, es decir, flex: 1, 1, 5rem; */
+    flex-shrink: 1;
+    flex-basis: 5rem;
+    border-radius: 0.5em; }
+    .f_main .f_aside .title_aside {
+      font-size: large;
+      font-weight: bold; }
+    .f_main .f_aside .mas_leidas {
+      padding-left: 20px;
+      font-size: medium;
+      text-align: left;
+      font-family: 'Quicksand', sans-serif; }
+
+.f_footer {
+  background-color: #cdf1cd;
+  padding-top: 3rem;
+  /*Equivalente a 48px*/
+  padding-bottom: 3rem;
+  /*Equivalente a 48px*/
+  font-family: 'Iceland', cursive;
+  border-radius: 0.5em; }
+
+@media all and (max-width: 768px) {
+  .f_header {
+    font-size: larger; }
+    .f_header label {
+      display: block;
+      cursor: pointer; }
+    .f_header .menu {
+      margin: none;
+      width: 100%;
+      display: none; }
+      .f_header .menu li {
+        width: 110%;
+        border: lightpink 1px solid;
+        display: block; }
+        .f_header .menu li a {
+          margin: 0; }
+          .f_header .menu li a:hover {
+            background: none;
+            color: #7D3C98;
+            transition: 0.2s; }
+    .f_header #toggle:checked + .menu {
+      display: block; }
+
+  .f_main {
+    flex-direction: column; }
+    .f_main .f_article .title_article {
+      font-size: large; }
+    .f_main .f_article .not1, .f_main .f_article .not2, .f_main .f_article .not3, .f_main .f_article .not4 {
+      flex-direction: column;
+      align-items: center; } }
+
+/*# sourceMappingURL=main.css.map */
